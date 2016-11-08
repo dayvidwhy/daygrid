@@ -131,7 +131,6 @@ img {
 /*general card for holding info*/
 .card {
 	margin: 15px 10px;
-	background-color: #a3b1b2;
 }
 
 p {
@@ -147,8 +146,7 @@ p.bigger-text {
 
 p.text {
 	font-size: 1.2em;
-	height: 50px;
-	line-height: 50px;
+	padding: 5px 0;
 	color: #FFF;
 }
 
@@ -242,13 +240,12 @@ a {
 /*a button links*/
 a.down-link {
 	background-color: #3498db;
-	height: 40px;
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
-	padding: 0 20px;
+	padding: 5px 10px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -278,6 +275,10 @@ ol li a {
 ol li a:hover {
 	text-decoration: underline;
 	color: #3498db;
+}
+
+.card-bg {
+	background-color: #a3b1b2;
 }
 
 /*forms*/
