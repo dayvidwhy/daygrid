@@ -34,9 +34,13 @@ img {
 }
 
 /*columns go in rows*/
+.col-11,.col-10,.col-9,.col-8,.col-7,
+.col-6,.col-5,.col-4,.col-3,.col-2,.col-1 {
+	float: left;
+}
+
 .col-11 {
 	width: 91.66663%;
-	float: left;
 }
 
 .offset-11 {
@@ -45,7 +49,6 @@ img {
 
 .col-10 {
 	width: 83.33333%;
-	float: left;
 }
 
 .offset-10 {
@@ -54,7 +57,6 @@ img {
 
 .col-9 {
 	width: 75%;
-	float: left;
 }
 
 .offset-9{
@@ -63,7 +65,6 @@ img {
 
 .col-8 {
 	width: 66.66664%;
-	float: left;
 }
 
 .offset-8 {
@@ -72,7 +73,6 @@ img {
 
 .col-7 {
 	width: 58.33333%;
-	float: left;
 }
 
 .offset-7 {
@@ -81,7 +81,6 @@ img {
 
 .col-6 {
 	width: 50%;
-	float: left;
 }
 
 .offset-6 {
@@ -90,7 +89,6 @@ img {
 
 .col-5 {
 	width: 41.666665%;
-	float: left;
 }
 
 .offset-5 {
@@ -99,7 +97,6 @@ img {
 
 .col-4 {
 	width: 33.333333%;
-	float: left;
 }
 
 .offset-4 {
@@ -108,7 +105,6 @@ img {
 
 .col-3 {
 	width: 25%;
-	float: left;
 }
 
 .offset-3 {
@@ -117,7 +113,6 @@ img {
 
 .col-2 {
 	width: 16.666666%;
-	float: left;
 }
 
 .offset-2 {
@@ -126,7 +121,6 @@ img {
 
 .col-1 {
 	width: 8.333333%;
-	float: left;
 }
 
 .offset-1 {
@@ -136,13 +130,8 @@ img {
 
 /*general card for holding info*/
 .card {
-	margin: 0 10px;
+	margin: 15px 10px;
 	background-color: #a3b1b2;
-}
-
-/*pushes our cards apart*/
-.card-in {
-	margin: 15px 0 15px 0;
 }
 
 p {
@@ -292,6 +281,11 @@ ol li a:hover {
 }
 
 /*forms*/
+label {
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
 input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
