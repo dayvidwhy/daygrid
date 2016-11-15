@@ -10,6 +10,10 @@ body {
 	padding: 0;
 }
 
+main {
+	display: block;
+}
+
 /*let our images take up their divs*/
 img {
 	width: 100%;
