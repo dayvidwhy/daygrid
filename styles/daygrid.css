@@ -319,6 +319,8 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 	margin-bottom: 10px;
+	-webkit-appearance: none;
+    -webkit-border-radius: 0px;
 	transition: all 0.2s ease-in-out;
 }
 
