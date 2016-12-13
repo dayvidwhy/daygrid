@@ -4,7 +4,7 @@ I make use of this boilerplate grid quite a lot so I wanted to demonstrate how i
 ## Getting Started
 
 ### What does it look like?
-Head over to [daygrid.dwy.io](http://daygrid.dwy.io) to see what it is all about and get an idea of what the grid system entails.
+Head over to [the site](https://dayvidwhy.github.io/daygrid/) to see what it is all about and get an idea of what the grid system entails.
 
 ### Goals and Requirements
 * Be easy to use
