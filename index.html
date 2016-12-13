@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light-blue" lang='en'>
+<html class="blue" lang='en'>
 <head>
 	<meta charset="utf-8">
 	<meta name="keywords" content="responsive, grid">
@@ -15,18 +15,16 @@
 </head>
 <body>
 	<header role="banner">
-		<nav class="grid-fluid light-blue">
+		<div class="grid-fluid blue">
 			<div class="grid-container">
-				<ol>
-					<li><a href="#headings">Type</a></li>
-					<li><a href="#grid">Grid</a></li>
-					<li><a href="#forms">Form</a></li>
-					<li><a href="#buttons">Button</a></li>
-				</ol>
-			</div>
-		</nav>
-		<div class="grid-fluid blue box-shadow">
-			<div class="grid-container">
+				<nav class="grid-container">
+					<ol>
+						<li><a href="#buttons">Button</a></li>
+						<li><a href="#forms">Form</a></li>
+						<li><a href="#grid">Grid</a></li>
+						<li><a href="#headings">Type</a></li>
+					</ol>
+				</nav>
 				<div class="row hero-row">
 					<div class="inner">
 						<h1 class="center hero-row white">daygrid.css</h1>
@@ -39,20 +37,20 @@
 				<div class="row hero-row">
 					<div class="col-4">
 						<div class="inner">
-							<h4 class="center white bottom-border">Boilerplate</h4>
-							<p class="bigger-text center white">Welcome to my bare bones stylesheet that has helped me make websites.</p>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="inner">
-							<h4 class="center white bottom-border">Custom</h4>
-							<p class="bigger-text center white">This page is intended to be the beginning of my custom css boilerplate grid code.</p>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="inner">
-							<h4 class="center white bottom-border">Easy</h4>
+							<h3 class="center white bottom-border">Easy</h3>
 							<p class="bigger-text center white"> I hope that in the future this grid will be an easy entry point for new web developers.</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="inner">
+							<h3 class="center white bottom-border">Custom</h3>
+							<p class="bigger-text center white">Each class has meaningful names that make it easy to change.</p>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="inner">
+							<h3 class="center white bottom-border">Boilerplate</h3>
+							<p class="bigger-text center white">Bare bones stylesheet that has helped me make websites.</p>
 						</div>
 					</div>
 				</div>
@@ -60,16 +58,16 @@
 		</div>
 	</header><!-- grid-fluid -->
 	<main role="main" class="grid-container">
-		<div id="headings" class="row">
+		<div id="headings" class="row top-margins">
 			<div class="inner">
 				<h3>Headings</h3>
 				<p>Headings are intended to grab attention and and create pagination for your flow.</p>
-				<h1 class="margins">Heading 1</h1>
-				<h2 class="margins">Heading 2</h2>
-				<h3 class="margins">Heading 3</h3>
-				<h4 class="margins">Heading 4</h4>
-				<h5 class="margins">Heading 5</h5>
-				<h6 class="margins">Heading 6</h6>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
 			</div>
 		</div>
 		<div class="row">
@@ -349,7 +347,7 @@
 			</div>
 		</div><!-- row -->
 	</main> <!-- grid-container-->
-	<footer class="row light-blue center">
+	<footer class="row blue center">
 		<p class="text push-down">
 			Made by <a href="https://davidyoung.tech">davidyoung.tech</a>
 		</p>
