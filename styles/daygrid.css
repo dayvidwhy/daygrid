@@ -1,6 +1,36 @@
-/*deedubwhy.css v0.1*/
+/*
+daygrid.css v0.2
+
+The MIT License (MIT)
+
+Copyright (c) 2016 David Young
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
 html {
 	font-family: sans-serif;
+	box-sizing: border-box;
 	background-color: #FFF;
 }
 
@@ -10,11 +40,12 @@ body {
 	padding: 0;
 }
 
+/* Hack so IE displays main as a block level element. */
 main {
 	display: block;
 }
 
-/*let our images take up their divs*/
+/*Let our images take up their divs. */
 img {
 	width: 100%;
 	float: left;
@@ -31,7 +62,7 @@ img {
 	overflow: auto;
 }
 
-/*rows go in grids*/
+/* Rows go in grids. */
 .row {
 	clear: both;
 	overflow: auto;
@@ -132,9 +163,13 @@ img {
 }
 /*end grid*/
 
-/*general card for holding info*/
-.card {
+/* Add some space around information in div's */
+.inner {
 	margin: 15px 10px;
+}
+
+.inner-bg {
+	background-color: #a3b1b2;
 }
 
 p {
@@ -173,7 +208,7 @@ pre {
 /*start text style*/
 
 h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: 400;
 }
 
@@ -190,6 +225,8 @@ h3 {
 h4 {
 	font-size: 1.8rem;
 	font-weight: 100;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 h5 {
@@ -207,8 +244,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*colours*/
+.light-blue {background-color: #3498db;}
 .blue {background-color: #2980b9;}
 .darker {background-color: #ecf0f1;}
+.white {color: #FFF;}
 
 /*some overrides*/
 .push-down {
@@ -226,11 +265,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .hero-row {
-	margin-top: 6rem;
-	margin-bottom: 4rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 .top-border {
 	border-top: 1px solid black;
+}
+.bottom-border {
+	border-bottom: 2px solid #95a5a6;
+}
+.box-shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 /*alignment*/
 .center {text-align: center;}
@@ -248,8 +293,8 @@ a.down-link {
 	text-decoration: none;
 	text-align: center;
 	line-height: 40px;
-	border-radius: 20px;
-	padding: 5px 10px;
+	border-radius: 5px;
+	padding: 4px 18px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -261,6 +306,7 @@ a.down-link:hover {
 ol {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 }
 ol li {
 	font-size: 1em;
@@ -271,18 +317,15 @@ ol li {
 }
 
 ol li a {
-	color: #000;
+	color: #FFF;
 	text-decoration: none;
 	letter-spacing: 2px;
+	display: inline-block;
+	margin: 10px 0;
 }
 
 ol li a:hover {
 	text-decoration: underline;
-	color: #3498db;
-}
-
-.card-bg {
-	background-color: #a3b1b2;
 }
 
 /*forms*/
@@ -297,7 +340,6 @@ input[type=text] {
 	margin: 8px 0;
 	font-size: 1.3em;
 	border: 1px solid #ccc;
-	box-sizing: border-box;
 }
 
 textarea {
@@ -306,7 +348,6 @@ textarea {
 	margin: 8px 0;
 	font-size: 1em;
 	border: 1px solid #ccc;
-	box-sizing: border-box;
 }
 
 input[type=submit] {
@@ -318,8 +359,8 @@ input[type=submit] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	margin-bottom: 10px;
-	-webkit-appearance: none;
+	margin-bottom: 10px;	
+	-webkit-appearance: none; /* mobile safari */
     -webkit-border-radius: 0px;
 	transition: all 0.2s ease-in-out;
 }
