@@ -24,12 +24,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 *, *:after, *:before {
 	box-sizing: inherit;
 }
 
 html {
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
 	background-color: #FFF;
 }
@@ -248,7 +250,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /*colours*/
 .light-blue {background-color: #3498db;}
-.blue {background-color: #2980b9;}
+.blue {background-color: rgb(85, 119, 205);}
 .darker {background-color: #ecf0f1;}
 .white {color: #FFF;}
 
@@ -296,7 +298,7 @@ a {
 
 /*a button links*/
 a.down-link {
-	background-color: #3498db;
+	background-color: rgb(208, 139, 102);
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
