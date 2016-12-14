@@ -258,6 +258,11 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 20px;
 }
 
+.title-margins {
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
 .push-in {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -418,6 +423,10 @@ button:hover {
 	.hero-row {
 		margin-top: 3rem;
 		margin-bottom: 3rem;
+	}
+	.title-margins {
+		margin-top: 2.5em;
+		margin-bottom: 1.7em;
 	}
 }
 /*typical media query for phones*/
