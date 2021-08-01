@@ -74,13 +74,9 @@ img {
 }
 
 /*columns go in rows*/
-.col-11,.col-10,.col-9,.col-8,.col-7,
-.col-6,.col-5,.col-4,.col-3,.col-2,.col-1 {
-	float: left;
-}
-
 .col-11 {
 	width: 91.66663%;
+	float: left;
 }
 
 .offset-11 {
@@ -89,6 +85,7 @@ img {
 
 .col-10 {
 	width: 83.33333%;
+	float: left;
 }
 
 .offset-10 {
@@ -97,6 +94,7 @@ img {
 
 .col-9 {
 	width: 75%;
+	float: left;
 }
 
 .offset-9{
@@ -105,6 +103,7 @@ img {
 
 .col-8 {
 	width: 66.66664%;
+	float: left;
 }
 
 .offset-8 {
@@ -113,6 +112,7 @@ img {
 
 .col-7 {
 	width: 58.33333%;
+	float: left;
 }
 
 .offset-7 {
@@ -121,6 +121,7 @@ img {
 
 .col-6 {
 	width: 50%;
+	float: left;
 }
 
 .offset-6 {
@@ -129,6 +130,7 @@ img {
 
 .col-5 {
 	width: 41.666665%;
+	float: left;
 }
 
 .offset-5 {
@@ -137,6 +139,7 @@ img {
 
 .col-4 {
 	width: 33.333333%;
+	float: left;
 }
 
 .offset-4 {
@@ -145,6 +148,7 @@ img {
 
 .col-3 {
 	width: 25%;
+	float: left;
 }
 
 .offset-3 {
@@ -153,6 +157,7 @@ img {
 
 .col-2 {
 	width: 16.666666%;
+	float: left;
 }
 
 .offset-2 {
@@ -161,6 +166,7 @@ img {
 
 .col-1 {
 	width: 8.333333%;
+	float: left;
 }
 
 .offset-1 {
@@ -249,10 +255,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*colours*/
-.light-blue {background-color: #3498db;}
-.blue {background-color: rgb(85, 119, 205);}
-.darker {background-color: #ecf0f1;}
-.white {color: #FFF;}
+.light-blue {
+	background-color: #3498db;
+}
+.blue {
+	background-color: rgb(85, 119, 205);
+}
+.darker {
+	background-color: #ecf0f1;
+}
+.white {
+	color: #FFF;
+}
 
 /*some overrides*/
 .push-down {
@@ -421,11 +435,16 @@ button:hover {
 
 /*lets shrink once we're small*/
 @media screen and (max-width: 960px) {
-	.grid-container {width: 90%;margin:auto;}
+	.grid-container {
+		width: 90%;
+		margin:auto;
+	}
+
 	.hero-row {
 		margin-top: 3rem;
 		margin-bottom: 3rem;
 	}
+
 	.title-margins {
 		margin-top: 2.5em;
 		margin-bottom: 1.7em;
@@ -433,38 +452,109 @@ button:hover {
 }
 /*typical media query for phones*/
 @media screen and (max-width: 550px) {
-	h1 {font-size: 2rem;}
-	h2 {font-size: 1.7rem;}
-	input[type=text]{width: 100%;}
+	input[type=text] {
+		width: 100%;
+	}
+
 	ol li {
 		width: 25%;
 		margin-left: 0;
 	}
-	ol li a {font-size: 0.9em;}
+
+	ol li a {
+		font-size: 0.9em;
+	}
+
 	.hero-row {
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 	}
-	.col-1 {width: 100%;}
-	.col-2 {width: 100%;}
-	.col-3 {width: 100%;}
-	.col-4 {width: 100%;}
-	.col-5 {width: 100%;}
-	.col-6 {width: 100%;}
-	.col-7 {width: 100%;}
-	.col-8 {width: 100%;}
-	.col-9 {width: 100%;}
-	.col-10 {width: 100%;}
-	.col-11 {width: 100%;}
-	.offset-1 {margin-left: 0}
-	.offset-2 {margin-left: 0}
-	.offset-3 {margin-left: 0}
-	.offset-4 {margin-left: 0}
-	.offset-5 {margin-left: 0}
-	.offset-6 {margin-left: 0}
-	.offset-7 {margin-left: 0}
-	.offset-8 {margin-left: 0}
-	.offset-9 {margin-left: 0}
-	.offset-10 {margin-left: 0}
-	.offset-11 {margin-left: 0}
+
+	.col-1 {
+		width: 100%;
+	}
+
+	.col-2 {
+		width: 100%;
+	}
+
+	.col-3 {
+		width: 100%;
+	}
+
+	.col-4 {
+		width: 100%;
+	}
+
+	.col-5 {
+		width: 100%;
+	}
+
+	.col-6 {
+		width: 100%;
+	}
+
+	.col-7 {
+		width: 100%;
+	}
+
+	.col-8 {
+		width: 100%;
+	}
+
+	.col-9 {
+		width: 100%;
+	}
+
+	.col-10 {
+		width: 100%;
+	}
+
+	.col-11 {
+		width: 100%;
+	}
+
+	.offset-1 {
+		margin-left: 0;
+	}
+
+	.offset-2 {
+		margin-left: 0;
+	}
+
+	.offset-3 {
+		margin-left: 0;
+	}
+
+	.offset-4 {
+		margin-left: 0;
+	}
+
+	.offset-5 {
+		margin-left: 0;
+	}
+
+	.offset-6 {
+		margin-left: 0;
+	}
+
+	.offset-7 {
+		margin-left: 0;
+	}
+
+	.offset-8 {
+		margin-left: 0;
+	}
+
+	.offset-9 {
+		margin-left: 0;
+	}
+
+	.offset-10 {
+		margin-left: 0;
+	}
+
+	.offset-11 {
+		margin-left: 0;
+	}
 }
