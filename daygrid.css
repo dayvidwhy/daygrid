@@ -1,3 +1,27 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2024 David Young
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 *, *:after, *:before {
@@ -10,7 +34,9 @@ html {
     background-color: #FFF;
 }
 
-/*reset body css*/
+/**
+ * Reset body css
+ */
 body {
     background-color: #FFF;
     margin: 0;
@@ -19,18 +45,24 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Hack so IE displays main as a block level element. */
+/**
+ * Hack so IE displays main as a block level element.
+ */
 main {
     display: block;
 }
 
-/*Let our images take up their divs. */
+/**
+ * Let our images take up their divs.
+ */
 img {
     width: 100%;
     float: left;
 }
 
-/*grid*/
+/**
+ * Grid
+ */
 .grid-container {
     width: 960px;
     margin: auto;
@@ -41,13 +73,17 @@ img {
     overflow: auto;
 }
 
-/* Rows go in grids. */
+/**
+ * Rows go in grids.
+ */
 .row {
     clear: both;
     overflow: auto;
 }
 
-/*columns go in rows*/
+/**
+ * Columns go in rows
+ */
 .col-11 {
     width: 91.66663%;
     float: left;
@@ -71,7 +107,7 @@ img {
     float: left;
 }
 
-.offset-9{
+.offset-9 {
     margin-left: 75%;
 }
 
@@ -146,9 +182,10 @@ img {
 .offset-1 {
     margin-left: 8.333333%;
 }
-/*end grid*/
 
-/* Add some space around information in div's */
+/**
+ * Add some space around information in div's
+ */
 .inner {
     margin: 15px 10px;
 }
@@ -190,8 +227,9 @@ pre {
     white-space: pre;
 }
 
-/*start text style*/
-
+/**
+ * Start text style*
+ */
 h1 {
     font-size: 4rem;
     font-weight: 400;
@@ -228,7 +266,9 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0;
 }
 
-/*colours*/
+/**
+ * Colours
+ */
 .light-blue {
     background-color: #3498db;
 }
@@ -242,7 +282,9 @@ h1,h2,h3,h4,h5,h6 {
     color: #FFF;
 }
 
-/* some overrides */
+/**
+ * Some overrides
+ */
 .space {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -275,16 +317,29 @@ h1,h2,h3,h4,h5,h6 {
 .box-shadow {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-/*alignment*/
-.center {text-align: center;}
-.right {text-align: right;}
-.left {text-align: left;}
+
+/**
+ * Alignment
+ */
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
 
 a {
     color: #FFF;
 }
 
-/*a button links*/
+/**
+ * Button links
+ */
 a.down-link {
     background-color: rgb(208, 139, 102);
     display: inline-block;
@@ -306,12 +361,15 @@ a.down-link:hover {
     transform: translateY(2px);
 }
 
-/*navigation*/
+/**
+ * Navigation
+ */
 ol {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 ol li {
     font-size: 1.2em;
     float: right;
@@ -348,7 +406,9 @@ ol li a:hover::before {
     width: 70%;
 }
 
-/*forms*/
+/**
+ * Forms
+ */
 label {
     font-weight: 300;
     font-size: 1.5em;
@@ -407,7 +467,9 @@ button:hover {
     color: #FFF;
 }
 
-/*lets shrink once we're small*/
+/**
+ * Lets shrink once we're small
+ */
 @media screen and (max-width: 960px) {
     .grid-container {
         width: 90%;
@@ -424,7 +486,10 @@ button:hover {
         margin-bottom: 1.7em;
     }
 }
-/*typical media query for phones*/
+
+/**
+ * Typical media query for phones
+ */
 @media screen and (max-width: 550px) {
     input[type=text] {
         width: 100%;
